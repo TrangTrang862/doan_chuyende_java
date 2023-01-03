@@ -34,7 +34,6 @@ import com.laptopshop.service.SanPhamService;
 @Controller
 @SessionAttributes("loggedInUser")
 @RequestMapping("/")
-@CrossOrigin(origins = "http://localhost:8080")
 public class ClientController {
 
 	@Autowired
@@ -171,11 +170,6 @@ public class ClientController {
 		return "redirect:/login?logout";
 	}
 
-	@GetMapping("/shipping")
-	public String shippingPage(Model model) {
-
-		return "client/shipping";
-	}
 
 	@GetMapping("/guarantee")
 	public String guaranteePage(Model model) {

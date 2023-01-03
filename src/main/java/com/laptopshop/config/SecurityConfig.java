@@ -19,16 +19,16 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
 	
 	@Autowired
 	private AuthenticationSuccessHandler successHandler;
-	
+
 	@Autowired
 	private UserDetailsService userDetailsService;
 
-	
+
 	@Bean
 	public BCryptPasswordEncoder passwordEncoder() {
 		return new BCryptPasswordEncoder();
 	}
-	
+
 	@Bean
 	@Override
 	protected AuthenticationManager authenticationManager() throws Exception {
@@ -40,8 +40,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
 	public void configureGlobal(AuthenticationManagerBuilder builder) throws Exception {
 		builder.userDetailsService(userDetailsService).passwordEncoder(passwordEncoder());
 	}
-	
-	
+
+
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 		http
@@ -50,6 +50,11 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
 		        .antMatchers("/register").permitAll()
 		        .antMatchers("/").permitAll()
 				.antMatchers("/admin").hasRole("ADMIN")
+				.antMatchers("/admin/san-pham").hasRole("ADMIN")
+				.antMatchers("/admin/danh-muc").hasRole("ADMIN")
+				.antMatchers("/admin/nhan-hieu").hasRole("ADMIN")
+				.antMatchers("/admin/tai-khoan").hasRole("ADMIN")
+				.antMatchers("/admin/lien-he").hasRole("ADMIN")
 			    .and()
 			.formLogin()
 			    .loginPage("/login")
