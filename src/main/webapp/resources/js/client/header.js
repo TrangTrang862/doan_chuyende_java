@@ -3,7 +3,7 @@ $(document).ready(function(){
 	function ajaxGet2(){
 		$.ajax({
 			type: "GET",		
-			url: "http://localhost:8080/laptopshop/api/danh-muc/allForReal",
+			url: "http://localhost:8080/store/api/danh-muc/allForReal",
 			success: function(result){
 				$.each(result, function(i, danhmuc){
 					var content = '<li><a href="#"><span style=" font-size: 16px; font-weight: 900; ">'+danhmuc.tenDanhMuc+'</span></a></li>';

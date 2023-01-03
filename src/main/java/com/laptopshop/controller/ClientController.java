@@ -18,14 +18,7 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.web.authentication.logout.SecurityContextLogoutHandler;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.SessionAttributes;
+import org.springframework.web.bind.annotation.*;
 
 import com.laptopshop.dto.SearchSanPhamObject;
 import com.laptopshop.entities.DanhMuc;
@@ -41,6 +34,7 @@ import com.laptopshop.service.SanPhamService;
 @Controller
 @SessionAttributes("loggedInUser")
 @RequestMapping("/")
+@CrossOrigin(origins = "http://localhost:8080")
 public class ClientController {
 
 	@Autowired

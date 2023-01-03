@@ -36,7 +36,7 @@
 		    	
 		    <div class="content-grids">
 		    	<h4>DANH SÁCH LAPTOP MỚI NHẤT</h4>
-		    
+				<input type="hidden" value="${pageContext.request.userPrincipal.name != null}" id="check_login">
 			</div>
 			
 			

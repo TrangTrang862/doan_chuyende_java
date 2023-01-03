@@ -31,7 +31,7 @@ function changePass()
 			type: "POST",	
 			data: data,	
 			contentType : "application/json",
-			url: "http://localhost:8080/laptopshop/updatePassword",
+			url: "http://localhost:8080/store/updatePassword",
 			success: function(result){
 				if(result.status == "old")
 				{
