@@ -6,9 +6,8 @@
 					<div class="image-slider">
 						<!-- Slideshow 1 -->
 					    <ul class="rslides" id="slider1">
-					      <li><img src="Frontend/img/laptop1.jpg" alt=""></li>
-					      <li><img src="Frontend/img/laptop2.png" alt=""></li>
-					      <li><img src="Frontend/img/laptop3.png" alt=""></li>
+					      <li><img src="Frontend/img/ghe2.png" alt=""></li>
+					      <li><img src="Frontend/img/ghe1.jpg" alt=""></li>
 					    </ul>
 						 <!-- Slideshow 2 -->
 					</div>
@@ -20,22 +19,22 @@
 		    	<div class="top-3-grids">
 		    		<div class="section group">
 				<div class="grid_1_of_3 images_1_of_3">
-					  <a href="single.html"><img src="Frontend/img/acer.jpg"></a>
+					  <a href="single.html"><img src="Frontend/img/ghe4.jpg"></a>
 					  <h3>Thương hiệu nổi bật </h3>
 				</div>
 				<div class="grid_1_of_3 images_1_of_3 ">
-					   <a href="single.html"><img src="Frontend/img/lenovo2.png" style="background-color: white"></a>
+					   <a href="single.html"><img src="Frontend/img/ghe5.jpg" style="background-color: white"></a>
 					  <h3 >Thương hiệu nổi bật</h3>
 				</div>
 				<div class="grid_1_of_3 images_1_of_3 ">
-					   <a href="single.html"><img src="Frontend/img/dell.png" style="background-color: white"></a>
+					   <a href="single.html"><img src="Frontend/img/ghe6.jpg" style="background-color: white"></a>
 					  <h3>Thương hiệu nổi bật</h3>
 				</div>
 			</div>
 		    	</div>
 		    	
 		    <div class="content-grids">
-		    	<h4>DANH SÁCH LAPTOP MỚI NHẤT</h4>
+		    	<h4>DANH SÁCH SẢN PHẨM MỚI NHẤT</h4>
 				<input type="hidden" value="${pageContext.request.userPrincipal.name != null}" id="check_login">
 			</div>
 			

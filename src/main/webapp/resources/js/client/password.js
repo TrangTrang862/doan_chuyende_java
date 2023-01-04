@@ -40,7 +40,7 @@ function changePass()
 					return;
 				}else{
 					alert("Mật khẩu đã thay đổi");
-					window.location.href = "/laptopshop/account";
+					window.location.href = "/store/account";
 				}
 				
 			},

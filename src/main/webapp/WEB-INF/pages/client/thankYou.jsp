@@ -39,7 +39,7 @@
 		<br>
 		<p><b>QUÝ KHÁCH ĐÃ ĐẶT HÀNG THÀNH CÔNG</b></p><br>
 
-		<p>LaptopShop xin chân thành cảm ơn quý khách hàng đã tin tưởng sử dụng dịch vụ, sản phẩm của chúng tôi</p><br>
+		<p>Shop xin chân thành cảm ơn quý khách hàng đã tin tưởng sử dụng dịch vụ, sản phẩm của chúng tôi</p><br>
 		<a href="<%=request.getContextPath()%>/">Nhấn vào đây để tiếp tục mua sắm</a>
 		</div>
 		<div class="col-md-1">

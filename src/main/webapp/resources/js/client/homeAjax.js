@@ -38,6 +38,7 @@ $(document).ready(function(){
 			type: "GET",		
 			url: "http://localhost:8080/store/api/san-pham/latest",
 			success: function(result){
+				console.log(result);
 				var content;
 				var section = '<div class="section group">';
 				var endsection = '</div>'+'<br>';
